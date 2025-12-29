@@ -10,7 +10,7 @@ const MenuItem = ({ item, index = 0 }) => {
     <div className="menu-item">
       <div className="menu-item-image">
         <img 
-          src={item.image || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop'} 
+          src={item.image || 'no image'} 
           alt={item.name?.[language] || item.name?.en || 'Menu item'} 
           loading="lazy"
           onError={(e) => {

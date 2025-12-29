@@ -27,7 +27,7 @@
 }
 
 .menu-item:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-8px) scale(1.01);
   box-shadow: 0 12px 40px var(--shadow-medium);
   border-color: var(--yellow-warm);
 }

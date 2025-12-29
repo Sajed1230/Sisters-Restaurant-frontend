@@ -49,7 +49,7 @@ const Menu = () => {
       }
     }
 
-    // Initial load - will use cache if available
+    
     loadMenuData(false)
     
     // Refresh data every 5 minutes (cache duration) to get updates
