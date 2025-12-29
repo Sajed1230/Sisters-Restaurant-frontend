@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Navy Red Colors */
+  --navy-red: #6B0F1A;
+  --navy-red-dark: #4A0A12;
+  --navy-red-light: #8B1A2A;
+  --navy-red-hover: #7A1520;
+  
+  /* Yellow/Light Yellow Colors */
+  --yellow-light: #FFF8DC;
+  --yellow-gold: #FFD700;
+  --yellow-warm: #FFEAA7;
+  --yellow-cream: #FEF9E7;
+  --yellow-accent: #FFC107;
+  
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --text-dark: #2C2C2C;
+  --text-light: #666666;
+  --shadow-light: rgba(107, 15, 26, 0.1);
+  --shadow-medium: rgba(107, 15, 26, 0.2);
+  --shadow-heavy: rgba(107, 15, 26, 0.3);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, var(--yellow-cream) 0%, var(--yellow-light) 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+

@@ -1,0 +1,32 @@
+{
+  "common": {
+    "loading": "جاري التحميل",
+    "loadingDots": "...",
+    "retry": "إعادة المحاولة",
+    "noItems": "لا توجد عناصر في هذه الفئة",
+    "allProducts": "جميع المنتجات",
+    "showAll": "عرض الكل",
+    "searchPlaceholder": "البحث في عناصر القائمة...",
+    "currency": "جنيه",
+    "refreshing": "جاري التحديث..."
+  },
+  "restaurant": {
+    "name": "مطعم الاخوات",
+    "slogan": "مأكولات سودانية وعربية أصيلة"
+  },
+  "categories": {
+    "appetizers": "المقبلات",
+    "mainDishes": "الأطباق الرئيسية",
+    "grills": "المشويات",
+    "desserts": "الحلويات",
+    "beverages": "المشروبات",
+    "sandwiches": "السندويشات"
+  },
+  "errors": {
+    "loadFailed": "فشل تحميل القائمة. يرجى المحاولة مرة أخرى لاحقاً."
+  },
+  "language": {
+    "switchTo": "التبديل إلى الإنجليزية",
+    "current": "AR"
+  }
+}

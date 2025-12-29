@@ -1,0 +1,119 @@
+.menu-item {
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid transparent;
+  position: relative;
+  opacity: 1;
+  transform: none;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy-red), var(--yellow-gold));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px var(--shadow-medium);
+  border-color: var(--yellow-warm);
+}
+
+.menu-item:hover::before {
+  opacity: 1;
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background: var(--yellow-cream);
+}
+
+.menu-item-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(107, 15, 26, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image::after {
+  opacity: 1;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-item:hover .menu-item-image img {
+  transform: scale(1.15);
+}
+
+.menu-item-content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, var(--white) 0%, var(--yellow-cream) 100%);
+}
+
+.menu-item-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy-red);
+  margin-bottom: 12px;
+  font-family: 'Cairo', 'Poppins', sans-serif;
+  line-height: 1.3;
+}
+
+.menu-item-description {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 18px;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.menu-item-price {
+  background: linear-gradient(135deg, var(--yellow-gold) 0%, var(--yellow-accent) 100%);
+  color: var(--navy-red-dark);
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.menu-item:hover .menu-item-price {
+  background: linear-gradient(135deg, var(--navy-red) 0%, var(--navy-red-light) 100%);
+  color: var(--yellow-gold);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px var(--shadow-medium);
+}
+

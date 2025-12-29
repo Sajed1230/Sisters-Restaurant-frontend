@@ -1,0 +1,32 @@
+{
+  "common": {
+    "loading": "Loading menu",
+    "loadingDots": "...",
+    "retry": "Retry",
+    "noItems": "No items in this category",
+    "allProducts": "All Products",
+    "showAll": "Show All",
+    "searchPlaceholder": "Search menu items...",
+    "currency": "SDG",
+    "refreshing": "Refreshing..."
+  },
+  "restaurant": {
+    "name": "Sisters Restaurant",
+    "slogan": "Authentic Sudanese and Arabic Cuisine"
+  },
+  "categories": {
+    "appetizers": "Appetizers",
+    "mainDishes": "Main Dishes",
+    "grills": "Grills",
+    "desserts": "Desserts",
+    "beverages": "Drinks",
+    "sandwiches": "Sandwiches"
+  },
+  "errors": {
+    "loadFailed": "Failed to load menu. Please try again later."
+  },
+  "language": {
+    "switchTo": "Switch to Arabic",
+    "current": "EN"
+  }
+}

@@ -1,0 +1,103 @@
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  left: auto;
+  z-index: 10000;
+  background: linear-gradient(135deg, var(--navy-red) 0%, var(--navy-red-light) 100%);
+  color: var(--yellow-gold);
+  border: 2px solid var(--yellow-warm);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 6px 20px var(--shadow-medium);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  direction: ltr;
+  animation: slideInFromRight 0.6s ease-out 0.2s both;
+}
+
+.language-switcher::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--yellow-gold);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+  opacity: 0.3;
+}
+
+.language-switcher:hover {
+  background: linear-gradient(135deg, var(--navy-red-hover) 0%, var(--navy-red) 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px var(--shadow-heavy);
+  border-color: var(--yellow-gold);
+  color: var(--yellow-warm);
+}
+
+.language-switcher:hover::before {
+  width: 200px;
+  height: 200px;
+}
+
+.language-switcher:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.language-switcher:focus {
+  outline: 3px solid var(--yellow-gold);
+  outline-offset: 2px;
+}
+
+.language-switcher:focus-visible {
+  outline: 3px solid var(--yellow-gold);
+  outline-offset: 2px;
+}
+
+/* Keep button on the right side regardless of RTL/LTR */
+body[dir="rtl"] .language-switcher {
+  right: 24px;
+  left: auto;
+}
+
+.language-switcher span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.language-switcher:hover span {
+  transform: scale(1.1);
+}
+
+.language-switcher:active span {
+  transform: scale(0.95);
+}
+
